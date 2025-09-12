@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+button:focus,
+a:focus {
+  outline: 2px solid rgba(0, 91, 211, 1);
+  outline-offset: 1px;
+}
+
+.images-div {
+  background: linear-gradient(0deg, #D0E3F1 0%, #294962 100%);
+}
+.realtime-div {
+  background: linear-gradient(0deg, rgb(206, 246, 255) 0%, oklch(0.7972 0.1583 221.31) 35%, oklch(0.6575 0.1796 237.869) 100%);
+}
+.enhancer-div {
+  background: linear-gradient(0deg, #888888 0%, #000000 100%);
+}
+.video-lipsync {
+  background: linear-gradient(0deg, #BBCA91 0%, #3C878F 60%, #07280F 100%);
+}
+.edit-div {
+  background: linear-gradient(0deg, #AE91CA 0%, #592A85 60%, #180728 100%);
 }

@@ -1,0 +1,15 @@
+.dark .black-bg {
+    background-color: rgb(18, 18, 18);
+}
+
+.dark .dark-text {
+    color: rgb(232, 232, 232);
+}
+
+.dark .gray-text {
+    color: #bebebf;
+}
+
+.dark .gray-bg {
+    background: rgba(48, 48, 48);
+}
