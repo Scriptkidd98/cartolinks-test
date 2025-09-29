@@ -101,12 +101,12 @@ export default function Home() {
             <div className="w-2/4 flex-grow flex items-center justify-end">
               <div className="flex items-center gap-2">
                 {slides.map((_, idx) => (
-                  <button
+                  <div
                     key={idx}
                     className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === current ? (darkMode ? 'bg-gray-100' : 'bg-black') : (darkMode ? 'bg-gray-700' : 'bg-gray-300')}`}
-                    onClick={() => setCurrent(idx)}
-                    aria-label={`Go to slide ${idx + 1}`}
-                  ></button>
+                    /* onClick={() => setCurrent(idx)}
+                    aria-label={`Go to slide ${idx + 1}`} */
+                  ></div>
                 ))}
               </div>
             </div>
